@@ -1,7 +1,4 @@
-// Use the live backend URL on Render. If you want to override for local dev,
-// set VITE_API_BASE in your environment and Vite will replace import.meta.env.VITE_API_BASE
-const envBase = (typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.VITE_API_BASE) || null;
-export const API_BASE = envBase || 'https://at-backend-1.onrender.com/api';
+export const API_BASE = 'https://at-backend-2.onrender.com/api';
 
 // Generic API request with better error handling
 async function apiRequest(path, options = {}) {
